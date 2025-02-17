@@ -3,7 +3,7 @@ clear; clc;  close all
 % data='HumanVisual'; % the filename of the data file
 data='HCPR3gsr'; % the filename of the data file
 
-p2data=['../data/' data '.mat']; % path of data file which must includes following parameters:
+p2data=['../QPPLab/data/' data '.mat']; % path of data file which must includes following parameters:
 % D0:   a nsbj X nscn cell matrix. Each cell has a nroi X ntimepoints 
 %       matrix of EPI timeseries
 % MotionInf: a nsbj X nscn cell matrix. Each cell >=1 segments of

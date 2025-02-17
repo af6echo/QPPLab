@@ -1,13 +1,14 @@
 %% Setup parameters
+clc
 %%% load unreorganized data
-dataIN='../data/B_GSR_HCPR3.mat'; D=load(dataIN,'B','MotionInf'); D0=D.B; 
+dataIN='../data/input_data.mat'; D=load(dataIN,'B','MotionInf'); D0=D.B; 
 %%% define output filename
-dataOUT='../data/HCPR3gsr.mat'; 
+dataOUT='../data/output_data.mat';
 %%% load parcel label and network spreedsheet
-AtlasTable = readtable(['../assets/Glasser2016_360Parcels_7Networks.xlsx']);
+AtlasTable = readtable(['../assets/atlas.xlsx']);
 % AtlasTable = readtable(['./resources/Schaefer2018_400Parcels_7Networks_2mm.xlsx']);
 Label='Parcel_ID'; % this should be variable name of the numerical label of ROIs
-System='Network'; % this is the variable name of the numerical label of functional networks
+System='Area_Name'; % this is the variable name of the numerical label of functional networks
 %%% add function files
 addpath('./QPPfv0922/')
 %% code
